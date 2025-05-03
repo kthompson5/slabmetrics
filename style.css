@@ -32,25 +32,25 @@ a:hover {
   font-weight: bold;
   font-family: 'Segoe UI', 'Roboto', 'Open Sans', sans-serif;
   padding: 6px 12px;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 6px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 
 .logo .slab {
-  color: #003366;
+  color: #003366; /* Dark Blue */
 }
 
 .logo .metrics {
-  color: #228B22;
+  color: #228B22; /* Deep Green */
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
   gap: 20px;
+  padding-left: 0;
   margin: 0;
-  padding: 0;
 }
 
 .navbar ul li {
@@ -66,10 +66,11 @@ a:hover {
 .hero {
   text-align: center;
   padding: 80px 20px;
-  background: linear-gradient(to right, #001f3f, #004080);
+  background: linear-gradient(to right, #001830, #003060);
+  background-blend-mode: multiply;
   background-image: url('subtle-noise.png');
-  background-blend-mode: overlay;
   color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 .hero h1 {
@@ -78,14 +79,12 @@ a:hover {
 }
 
 .hero p {
-  font-size: 1.25rem;
-  max-width: 700px;
-  margin: 0 auto;
+  font-size: 1.2rem;
 }
 
 .btn-primary {
   display: inline-block;
-  margin-top: 25px;
+  margin-top: 20px;
   background-color: #00aaff;
   color: white;
   padding: 10px 25px;
@@ -107,57 +106,39 @@ a:hover {
 .tracker h2 {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-/* Bar Graph Styles */
-.bar-chart {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+.consistency-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
-.bar {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.consistency-table th,
+.consistency-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
 }
 
-.bar-label {
-  width: 150px;
-  font-weight: bold;
-  font-size: 0.95rem;
+.consistency-table th {
+  background-color: #004080;
+  color: white;
 }
 
-.bar-fill {
-  height: 22px;
-  border-radius: 4px;
-  background-color: #0077cc;
-  position: relative;
-  transition: width 0.4s ease;
+.consistency-table tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
-.bar-score {
-  margin-left: 8px;
-  min-width: 30px;
-  font-weight: bold;
+.last-updated {
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 0.9rem;
 }
 
-/* Colored Bars */
-.psa    { background-color: #cc0000; }
-.sgc    { background-color: #111111; }
-.bgs    { background-color: goldenrod; }
-.cgc    { background-color: #cc0000; }
-.tag    { background-color: #000000; }
-.arena  { background-color: #228B22; }
-.fcg    { background-color: #111111; }
-.dsg    { background-color: #0077cc; }
-.ags    { background-color: #ff69b4; }
-.isa    { background-color: #0077cc; }
-.edge   { background-color: purple; }
-
-/* Report Cards */
+/* Latest Reports */
 .latest-reports {
   background-color: #eef6fa;
   padding: 50px 20px;
