@@ -5,6 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ISA Grading - Company Profile | SlabMetrics</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .card {
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .score-bar {
+      margin: 8px 0;
+    }
+    .score-bar span {
+      font-weight: 500;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .score-bar .bar {
+      background: #eee;
+      border-radius: 6px;
+      overflow: hidden;
+      height: 10px;
+    }
+    .score-bar .bar div {
+      background: #3399ff;
+      height: 100%;
+    }
+    @media (max-width: 600px) {
+      .tracker img {
+        max-width: 90%;
+      }
+    }
+    .cta-card {
+      text-align: center;
+      background: #e8f6f3;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .cta-card a {
+      display: inline-block;
+      margin-top: 10px;
+      background: #2a9d8f;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
 
@@ -32,53 +79,74 @@
       <img src="ISA.png" alt="ISA Logo" style="max-width: 200px;">
     </div>
 
-    <h3>Snapshot</h3>
-    <p><strong>Founded:</strong> 2010</p>
-    <p><strong>Headquarters:</strong> Brighton, Michigan</p>
-    <p><strong>Website:</strong> <a href="https://www.isagrading.com">isagrading.com</a></p>
-    <p><strong>Submission Portal:</strong> <a href="https://www.isagrading.com/submit-a-card">Submit a Card</a></p>
-
-    <h3>Power Rankings Score: 3.83</h3>
-    <ul>
-      <li>Volume: 2.5</li>
-      <li>Appearance: 4.0</li>
-      <li>Turnaround: 8.0</li>
-      <li>Pricing: 7.5</li>
-      <li>Technology: 3.0</li>
-      <li>Transparency: 8.5</li>
-      <li>Resale Value: 2.0</li>
-      <li>Brand Recognition: 3.0</li>
-    </ul>
-
-    <h3>Slab Design</h3>
-    <p>ISA slabs are functional with a clean, tamper-evident case. The label is clear but basic.</p>
-    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
-      <img src="isa-mj-front.png" alt="ISA Slab Front" style="max-width: 300px; border-radius: 10px;">
-      <img src="isa-mj-back.png" alt="ISA Slab Back" style="max-width: 300px; border-radius: 10px;">
+    <div class="card">
+      <h3>Snapshot</h3>
+      <p><strong>Founded:</strong> 2010</p>
+      <p><strong>Headquarters:</strong> Brighton, Michigan</p>
+      <p><strong>Website:</strong> <a href="https://www.isagrading.com">isagrading.com</a></p>
+      <p><strong>Submission Portal:</strong> <a href="https://www.isagrading.com/submit-a-card">Submit a Card</a></p>
     </div>
 
-    <h3>Submission & Pricing</h3>
-    <p>Standard turnaround time: 5–10 business days</p>
-    <p>Base grading price: $12/card</p>
+    <div class="card">
+      <h3>Power Rankings Score: 3.83</h3>
+      <div class="score-bar"><span>Volume</span><div class="bar"><div style="width:25%"></div></div></div>
+      <div class="score-bar"><span>Appearance</span><div class="bar"><div style="width:40%"></div></div></div>
+      <div class="score-bar"><span>Turnaround</span><div class="bar"><div style="width:80%"></div></div></div>
+      <div class="score-bar"><span>Pricing</span><div class="bar"><div style="width:75%"></div></div></div>
+      <div class="score-bar"><span>Technology</span><div class="bar"><div style="width:30%"></div></div></div>
+      <div class="score-bar"><span>Transparency</span><div class="bar"><div style="width:85%"></div></div></div>
+      <div class="score-bar"><span>Resale Value</span><div class="bar"><div style="width:20%"></div></div></div>
+      <div class="score-bar"><span>Brand Recognition</span><div class="bar"><div style="width:30%"></div></div></div>
+    </div>
 
-    <h3>Transparency & Technology</h3>
-    <p>ISA offers a public pop report and API access for developers.</p>
-    <p>QR code verification included. No AI or blockchain features currently used.</p>
+    <div class="card">
+      <h3>Slab Design</h3>
+      <p>ISA slabs are functional with a clean, tamper-evident case. The label is clear but basic.</p>
+      <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
+        <img src="isa-mj-front.png" alt="ISA Slab Front" style="max-width: 300px; border-radius: 10px;">
+        <img src="isa-mj-back.png" alt="ISA Slab Back" style="max-width: 300px; border-radius: 10px;">
+      </div>
+    </div>
 
-    <h3>Resale Performance</h3>
-    <p>Lower resale comps compared to PSA/SGC. More suited for personal collections than flipping.</p>
+    <div class="card">
+      <h3>Submission & Pricing</h3>
+      <p>Standard turnaround time: 5–10 business days</p>
+      <p>Base grading price: $12/card</p>
+    </div>
 
-    <h3>Brand Visibility</h3>
-    <p>Moderate social media presence. Limited presence at major card shows.</p>
+    <div class="card">
+      <h3>Transparency & Technology</h3>
+      <p>ISA offers a public pop report and API access for developers.</p>
+      <p>QR code verification included. No AI or blockchain features currently used.</p>
+    </div>
 
-    <h3>Pros & Cons</h3>
-    <ul>
-      <li><strong>Pros:</strong> Fast turnaround, affordable pricing, strong pop report</li>
-      <li><strong>Cons:</strong> Lower resale value, basic label design</li>
-    </ul>
+    <div class="card">
+      <h3>Resale Performance</h3>
+      <p>Lower resale comps compared to PSA/SGC. More suited for personal collections than flipping.</p>
+    </div>
 
-    <h3>Final Take</h3>
-    <p>ISA is a solid budget-friendly grader with fast service and strong pop data. Best for collectors who want quick, affordable grading over resale performance.</p>
+    <div class="card">
+      <h3>Brand Visibility</h3>
+      <p>Moderate social media presence. Limited presence at major card shows.</p>
+    </div>
+
+    <div class="card">
+      <h3>Pros & Cons</h3>
+      <ul>
+        <li><strong>Pros:</strong> Fast turnaround, affordable pricing, strong pop report</li>
+        <li><strong>Cons:</strong> Lower resale value, basic label design</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Final Take</h3>
+      <p>ISA is a solid budget-friendly grader with fast service and strong pop data. Best for collectors who want quick, affordable grading over resale performance.</p>
+    </div>
+
+    <div class="cta-card">
+      <p>Want to compare ISA to other graders?</p>
+      <a href="#">See Full Rankings</a>
+    </div>
   </section>
 
   <!-- Footer -->
