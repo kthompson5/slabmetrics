@@ -16,63 +16,95 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Navbar */
+/* Navbar with Hamburger */
 .navbar {
-  background-color: #001f3f;
-  color: white;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
-  flex-wrap: wrap;
+  padding: 10px 20px;
+  position: relative;
+  border-bottom: 1px solid #ddd;
 }
 
-.navbar .logo img.navbar-logo {
-  height: 40px;
-  max-width: 160px;
-  object-fit: contain;
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #003366;
+  cursor: pointer;
 }
 
-.logo .slab {
-  color: #003366; /* Dark Blue */
-}
-
-.logo .metrics {
-  color: #228B22; /* Deep Green */
-}
-
-.navbar ul {
+.nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
-  padding-left: 0;
   margin: 0;
+  padding: 0;
 }
 
-.navbar ul li {
-  display: inline;
+.nav-links li a {
+  color: #003366;
+  font-weight: 600;
 }
 
-.navbar ul li a {
-  color: white;
-  font-weight: bold;
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    margin-top: 10px;
+    padding: 0;
+    border-top: 1px solid #ddd;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-links li a {
+    color: #003366;
+  }
+
+  .nav-links.active li a {
+    color: #003366;
+  }
 }
 
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 80px 20px;
-  background-color: #eef6fa;
-  color: #003366;
+  padding: 40px 20px 40px;
+  background: linear-gradient(to right, #003366, #0055a5);
+  color: white;
+}
+
+.hero img.hero-logo {
+  max-height: 160px;
+  margin-bottom: 10px;
 }
 
 .hero h1 {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 
 .hero p {
   font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .btn-primary {
@@ -89,57 +121,36 @@ a:hover {
   background-color: #0088cc;
 }
 
-/* Tracker Section */
-.tracker {
+/* Tracker, Reports, About, Subscribe Sections */
+.tracker,
+.latest-reports,
+.about-teaser,
+.subscribe-teaser {
   max-width: 1000px;
-  margin: 50px auto;
-  padding: 20px;
+  margin: 0 auto;
+  padding: 50px 20px;
 }
 
-.tracker h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.consistency-table {
+.tracker table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
 }
 
-.consistency-table th,
-.consistency-table td {
+.tracker th,
+.tracker td {
   border: 1px solid #ddd;
   padding: 12px;
   text-align: center;
 }
 
-.consistency-table th {
+.tracker th {
   background-color: #004080;
   color: white;
 }
 
-.consistency-table tr:nth-child(even) {
+.tracker tr:nth-child(even) {
   background-color: #f2f2f2;
-}
-
-.last-updated {
-  text-align: center;
-  margin-top: 10px;
-  font-style: italic;
-  font-size: 0.9rem;
-}
-
-/* Latest Reports */
-.latest-reports {
-  background-color: #eef6fa;
-  padding: 50px 20px;
-}
-
-.latest-reports h2 {
-  text-align: center;
-  margin-bottom: 30px;
 }
 
 .report-cards {
@@ -158,13 +169,7 @@ a:hover {
   text-align: center;
 }
 
-/* About Teaser */
-.about-teaser {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.about-teaser .btn-secondary {
+.btn-secondary {
   display: inline-block;
   margin-top: 20px;
   background-color: #004080;
@@ -173,24 +178,18 @@ a:hover {
   border-radius: 5px;
 }
 
-.about-teaser .btn-secondary:hover {
+.btn-secondary:hover {
   background-color: #00264d;
 }
 
-/* Subscribe Section */
 .subscribe-teaser {
   background-color: #cce7ff;
-  padding: 50px 20px;
   text-align: center;
-}
-
-.subscribe-teaser h2 {
-  margin-bottom: 10px;
 }
 
 /* Footer */
 .footer {
-  background-color: #001f3f;
+  background-color: #1a1a1a;
   color: white;
   text-align: center;
   padding: 20px;
@@ -200,143 +199,4 @@ a:hover {
 .footer nav a {
   color: #00aaff;
   margin: 0 10px;
-}
-
-/* Mobile Navbar */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px;
-  }
-
-  .navbar .logo {
-    margin-bottom: 10px;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    width: 100%;
-    padding: 0;
-    gap: 10px;
-  }
-
-  .navbar ul li {
-    width: 100%;
-  }
-
-  .navbar ul li a {
-    display: block;
-    padding: 10px 0;
-    width: 100%;
-    color: white;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-}
-/* Updated Navbar */
-.navbar {
-  background-color: #222e38; /* neutral dark slate */
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  flex-wrap: wrap;
-  position: relative;
-}
-
-.navbar .logo img.navbar-logo {
-  height: 40px;
-  max-width: 160px;
-  object-fit: contain;
-}
-
-/* Hamburger Button */
-.hamburger {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
-  display: none;
-}
-
-/* Nav Menu (Desktop Default) */
-.nav-menu ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  padding-left: 0;
-  margin: 0;
-}
-
-.nav-menu ul li a {
-  color: white;
-  font-weight: bold;
-}
-
-/* Responsive for Mobile */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  .nav-menu {
-    display: none;
-    width: 100%;
-  }
-
-  .nav-menu.active {
-    display: block;
-    background-color: #222e38;
-    margin-top: 10px;
-  }
-
-  .nav-menu ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .nav-menu ul li {
-    padding: 10px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-  }
-}
-/* Top Header Logo */
-.top-header {
-  text-align: center;
-  padding: 10px 0;
-  background-color: #ffffff;
-}
-
-.main-logo {
-  max-height: 60px;
-  width: auto;
-  object-fit: contain;
-}
-
-/* Navbar (no logo now) */
-.navbar {
-  background-color: #1a1a1a; /* soft neutral that won't clash with blue/green */
-  color: white;
-  padding: 12px 30px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li a {
-  color: white;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.nav-links li a:hover {
-  text-decoration: underline;
 }
