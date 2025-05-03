@@ -233,3 +233,72 @@ a:hover {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 }
+/* Updated Navbar */
+.navbar {
+  background-color: #222e38; /* neutral dark slate */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.navbar .logo img.navbar-logo {
+  height: 40px;
+  max-width: 160px;
+  object-fit: contain;
+}
+
+/* Hamburger Button */
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+/* Nav Menu (Desktop Default) */
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding-left: 0;
+  margin: 0;
+}
+
+.nav-menu ul li a {
+  color: white;
+  font-weight: bold;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    width: 100%;
+  }
+
+  .nav-menu.active {
+    display: block;
+    background-color: #222e38;
+    margin-top: 10px;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-menu ul li {
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
