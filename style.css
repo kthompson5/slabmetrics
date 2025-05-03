@@ -302,3 +302,41 @@ a:hover {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 }
+/* Top Header Logo */
+.top-header {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #ffffff;
+}
+
+.main-logo {
+  max-height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Navbar (no logo now) */
+.navbar {
+  background-color: #1a1a1a; /* soft neutral that won't clash with blue/green */
+  color: white;
+  padding: 12px 30px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
