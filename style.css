@@ -66,11 +66,8 @@ a:hover {
 .hero {
   text-align: center;
   padding: 80px 20px;
-  background: linear-gradient(to right, #001830, #003060);
-  background-blend-mode: multiply;
-  background-image: url('subtle-noise.png');
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  background-color: #eef6fa;
+  color: #003366;
 }
 
 .hero h1 {
