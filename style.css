@@ -63,7 +63,10 @@ a:hover {
 .hero {
   text-align: center;
   padding: 80px 20px;
-  background: linear-gradient(to right, #003366, #e0f2ff);;
+  background: linear-gradient(to right, #001f3f, #004080);
+  background-blend-mode: multiply;
+  background-image: url('subtle-noise.png'); /* A lightly speckled transparent PNG */
+}
   color: white;
 }
 
