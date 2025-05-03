@@ -25,11 +25,13 @@
 
     /* Navbar with Hamburger */
     .navbar {
-      background-color: #1f2d38;
+      background-color: white;
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 10px 20px;
+      position: relative;
+      border-bottom: 1px solid #ddd;
     }
 
     .hamburger {
@@ -37,7 +39,7 @@
       font-size: 28px;
       background: none;
       border: none;
-      color: white;
+      color: #003366;
       cursor: pointer;
     }
 
@@ -50,20 +52,20 @@
     }
 
     .nav-links li a {
-      color: white;
+      color: #003366;
       font-weight: 600;
     }
 
     /* Hero Section */
     .hero {
       text-align: center;
-      padding: 70px 20px 60px;
-      background-color: #eef6fa;
-      color: #003366;
+      padding: 80px 20px 70px;
+      background: linear-gradient(to right, #003366, #0055a5);
+      color: white;
     }
 
     .hero img.hero-logo {
-      max-height: 100px;
+      max-height: 300px;
       margin-bottom: 20px;
     }
 
@@ -177,8 +179,10 @@
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #1f2d38;
+        background-color: white;
         margin-top: 10px;
+        padding: 0;
+        border-top: 1px solid #ddd;
       }
 
       .nav-links.active {
@@ -186,8 +190,12 @@
       }
 
       .nav-links li {
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
         padding: 10px 20px;
+        border-bottom: 1px solid #eee;
+      }
+
+      .nav-links li a {
+        color: #003366;
       }
     }
   </style>
