@@ -9,20 +9,24 @@
 <body>
 
   <!-- Header / Navbar -->
-  <header class="navbar">
-    <div class="logo">
-  <img src="logo.jpeg" alt="SlabMetrics Logo" class="navbar-logo">
-</div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Analytics</a></li>
-        <li><a href="#">Hidden Metrics</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Subscribe</a></li>
-      </ul>
-    </nav>
-  </header>
+<header class="navbar">
+  <button class="hamburger" aria-label="Toggle menu">&#9776;</button>
+  
+  <nav class="nav-menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Analytics</a></li>
+      <li><a href="#">Hidden Metrics</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Subscribe</a></li>
+    </ul>
+  </nav>
+
+  <div class="logo">
+    <img src="logo.jpeg" alt="SlabMetrics Logo" class="navbar-logo">
+  </div>
+</header>
+
 
   <!-- Hero Section -->
   <section class="hero">
@@ -115,6 +119,13 @@
       <a href="#">Subscribe</a>
     </nav>
   </footer>
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-menu');
 
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
