@@ -23,7 +23,6 @@
       text-decoration: underline;
     }
 
-    /* Navbar with Hamburger */
     .navbar {
       background-color: white;
       display: flex;
@@ -56,17 +55,45 @@
       font-weight: 600;
     }
 
-    /* Hero Section */
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        margin-top: 10px;
+        padding: 0;
+        border-top: 1px solid #ddd;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links li {
+        padding: 10px 20px;
+        border-bottom: 1px solid #eee;
+      }
+
+      .nav-links li a {
+        color: #003366;
+      }
+    }
+
     .hero {
       text-align: center;
-      padding: 80px 20px 70px;
+      padding: 40px 20px 40px;
       background: linear-gradient(to right, #003366, #0055a5);
       color: white;
     }
 
     .hero img.hero-logo {
-      max-height: 300px;
-      margin-bottom: 20px;
+      max-height: 180px;
+      margin-bottom: 10px;
     }
 
     .hero h1 {
@@ -94,7 +121,6 @@
       background-color: #0088cc;
     }
 
-    /* Sections */
     .tracker, .latest-reports, .about-teaser, .subscribe-teaser {
       max-width: 1000px;
       margin: 0 auto;
@@ -168,43 +194,11 @@
       color: #00aaff;
       margin: 0 10px;
     }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .hamburger {
-        display: block;
-      }
-
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: white;
-        margin-top: 10px;
-        padding: 0;
-        border-top: 1px solid #ddd;
-      }
-
-      .nav-links.active {
-        display: flex;
-      }
-
-      .nav-links li {
-        padding: 10px 20px;
-        border-bottom: 1px solid #eee;
-      }
-
-      .nav-links li a {
-        color: #003366;
-      }
-    }
   </style>
 </head>
 <body>
-
-  <!-- Navigation Bar -->
   <header class="navbar">
-    <button class="hamburger" aria-label="Menu">&#9776;</button>
+    <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
     <nav>
       <ul class="nav-links">
         <li><a href="#">Home</a></li>
@@ -216,19 +210,16 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero">
     <img src="logo.png" alt="SlabMetrics Logo" class="hero-logo">
-    <h1>SlabMetrics - Card Grading Insights</h1>
+    <h1>Card Grading Company Insights</h1>
     <p>At SlabMetrics, we spotlight card grading companies through hobby updates, style scores, resale trends, and more. Clean insights. Zero bias.</p>
     <a href="#" class="btn-primary">Explore Grading Companies</a>
   </section>
 
-  <!-- Main Feature: Grading Consistency Tracker -->
   <section class="tracker">
     <h2>This Week’s Grading Consistency Tracker</h2>
     <p>Tracking weekly gem rate swings across top grading companies.</p>
-
     <table class="consistency-table">
       <thead>
         <tr>
@@ -260,11 +251,9 @@
         </tr>
       </tbody>
     </table>
-
     <p class="last-updated">Last Updated: April 29, 2025</p>
   </section>
 
-  <!-- Latest Reports Section -->
   <section class="latest-reports">
     <h2>Latest Free Analytics</h2>
     <div class="report-cards">
@@ -283,37 +272,36 @@
     </div>
   </section>
 
-  <!-- About Teaser Section -->
   <section class="about-teaser">
     <h2>About SlabMetrics</h2>
     <p>SlabMetrics exists to demystify the grading landscape — making data clear, fair, and helpful for collectors and hobbyists alike.</p>
     <a href="#" class="btn-secondary">Learn More About Us</a>
   </section>
 
-  <!-- Subscribe Section -->
   <section class="subscribe-teaser">
     <h2>Stay Ahead of the Market</h2>
     <p>Get early access to weekly slab reports and insights built to help you make smarter decisions.</p>
     <a href="#" class="btn-primary">Subscribe (Coming Soon)</a>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <p>&copy; 2025 SlabMetrics. All rights reserved.</p>
     <nav>
-      <a href="#">Home</a> | 
-      <a href="#">Analytics</a> | 
-      <a href="#">Hidden Metrics</a> | 
-      <a href="#">About</a> | 
+      <a href="#">Home</a> |
+      <a href="#">Analytics</a> |
+      <a href="#">Hidden Metrics</a> |
+      <a href="#">About</a> |
       <a href="#">Subscribe</a>
     </nav>
   </footer>
 
   <script>
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
+    document.addEventListener('DOMContentLoaded', function () {
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
     });
   </script>
 </body>
