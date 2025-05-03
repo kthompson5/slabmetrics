@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -42,14 +44,16 @@
     .resale { background-color: #FF4136; }
     .brand { background-color: #85144b; }
 
-    @keyframes growBar {
-      to { width: var(--bar-width); }
-    }
+
+@keyframes growBar {
+  to { width: var(--bar-width); }
+}
+
   </style>
 </head>
 <body>
 
-  <!-- Header / Navbar -->
+
   <header class="navbar">
     <div class="logo">
       <span class="slab">Slab</span><span class="metrics">Metrics</span>
@@ -65,88 +69,96 @@
     </nav>
   </header>
 
-  <!-- Company Profile -->
+
   <section class="tracker">
     <h2>ISA Grading – Company Profile</h2>
 
-    <div style="text-align: center; margin-bottom: 30px;">
-      <img src="ISA.png" alt="ISA Logo" style="max-width: 200px;">
-    </div>
 
-    <h3>Snapshot</h3>
-    <p><strong>Founded:</strong> 2010</p>
-    <p><strong>Headquarters:</strong> Brighton, Michigan</p>
-    <p><strong>Website:</strong> <a href="https://www.isagrading.com">isagrading.com</a></p>
-    <p><strong>Submission Portal:</strong> <a href="https://www.isagrading.com/submit-a-card">Submit a Card</a></p>
+<div style="text-align: center; margin-bottom: 30px;">
+  <img src="ISA.png" alt="ISA Logo" style="max-width: 200px;">
+</div>
 
-    <h3>Power Rankings Score: 3.83</h3>
-    <div class="bar-container">
-      <div>
-        <div class="bar-label">Volume</div>
-        <div class="bar"><div class="bar-fill volume" style="--bar-width: 25%;">2.5</div></div>
-      </div>
-      <div>
-        <div class="bar-label">Appearance</div>
-        <div class="bar"><div class="bar-fill appearance" style="--bar-width: 40%;">4.0</div></div>
-      </div>
-      <div>
-        <div class="bar-label">Turnaround</div>
-        <div class="bar"><div class="bar-fill turnaround" style="--bar-width: 80%;">8.0</div></div>
-      </div>
-      <div>
-        <div class="bar-label">Pricing</div>
-        <div class="bar"><div class="bar-fill pricing" style="--bar-width: 75%;">7.5</div></div>
-      </div>
-      <div>
-        <div class="bar-label">Technology</div>
-        <div class="bar"><div class="bar-fill tech" style="--bar-width: 30%;">3.0</div></div>
-      </div>
-      <div>
-        <div class="bar-label">Transparency</div>
-        <div class="bar"><div class="bar-fill transparency" style="--bar-width: 85%;">8.5</div></div>
-      </div>
-      <div>
-        <div class="bar-label">Resale Value</div>
-        <div class="bar"><div class="bar-fill resale" style="--bar-width: 20%;">2.0</div></div>
-      </div>
-      <div>
-        <div class="bar-label">Brand Recognition</div>
-        <div class="bar"><div class="bar-fill brand" style="--bar-width: 30%;">3.0</div></div>
-      </div>
-    </div>
+<h3>Snapshot</h3>
+<p><strong>Founded:</strong> 2010</p>
+<p><strong>Headquarters:</strong> Brighton, Michigan</p>
+<p><strong>Website:</strong> <a href="https://www.isagrading.com">isagrading.com</a></p>
+<p><strong>Submission Portal:</strong> <a href="https://www.isagrading.com/submit-a-card">Submit a Card</a></p>
 
-    <h3>Slab Design</h3>
-    <p>ISA slabs are functional with a clean, tamper-evident case. The label is clear but basic.</p>
-    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
-      <img src="isa-mj-front.png" alt="ISA Slab Front" style="max-width: 300px; border-radius: 10px;">
-      <img src="isa-mj-back.png" alt="ISA Slab Back" style="max-width: 300px; border-radius: 10px;">
-    </div>
+<h3>Power Rankings Score: 3.83</h3>
+<div class="bar-container">
+  <div>
+    <div class="bar-label">Volume</div>
+    <div class="bar"><div class="bar-fill volume" style="--bar-width: 25%">2.5</div></div>
+    <p>ISA handles a relatively low submission volume compared to larger companies. They cater more to collectors than high-volume flippers.</p>
+  </div>
+  <div>
+    <div class="bar-label">Appearance</div>
+    <div class="bar"><div class="bar-fill appearance" style="--bar-width: 40%">4.0</div></div>
+    <p>Label design is legible but lacks visual flair or customization features seen in more modern slabs.</p>
+  </div>
+  <div>
+    <div class="bar-label">Turnaround</div>
+    <div class="bar"><div class="bar-fill turnaround" style="--bar-width: 80%">8.0</div></div>
+    <p>ISA consistently returns cards within 5–10 business days, offering one of the fastest turnaround times in the hobby.</p>
+  </div>
+  <div>
+    <div class="bar-label">Pricing</div>
+    <div class="bar"><div class="bar-fill pricing" style="--bar-width: 75%">7.5</div></div>
+    <p>One of the more affordable options, ISA’s $12/card pricing makes it budget-friendly for bulk or lower-value cards.</p>
+  </div>
+  <div>
+    <div class="bar-label">Technology</div>
+    <div class="bar"><div class="bar-fill tech" style="--bar-width: 30%">3.0</div></div>
+    <p>QR code verification is available, but there are no advanced features like AI grading or blockchain-backed reports.</p>
+  </div>
+  <div>
+    <div class="bar-label">Transparency</div>
+    <div class="bar"><div class="bar-fill transparency" style="--bar-width: 85%">8.5</div></div>
+    <p>ISA offers a fully public population report and developer API access—rare among smaller grading firms.</p>
+  </div>
+  <div>
+    <div class="bar-label">Resale Value</div>
+    <div class="bar"><div class="bar-fill resale" style="--bar-width: 20%">2.0</div></div>
+    <p>Cards graded by ISA generally sell for less than the same grades from top-tier graders like PSA or BGS.</p>
+  </div>
+  <div>
+    <div class="bar-label">Brand Recognition</div>
+    <div class="bar"><div class="bar-fill brand" style="--bar-width: 30%">3.0</div></div>
+    <p>ISA is lesser-known outside of niche collector circles and doesn’t have a strong presence at major card shows.</p>
+  </div>
+</div>
 
-    <h3>Submission & Pricing</h3>
-    <p>Standard turnaround time: 5–10 business days</p>
-    <p>Base grading price: $12/card</p>
+<h3>Slab Design</h3>
+<p>ISA slabs are sturdy and tamper-evident, with a matte finish and clear casing. The label uses large font sizes for grades but lacks personalization or flair. Some collectors appreciate the simplicity, while others feel the design is too generic.</p>
+<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
+  <img src="isa-mj-front.png" alt="ISA Slab Front" style="max-width: 300px; border-radius: 10px;">
+  <img src="isa-mj-back.png" alt="ISA Slab Back" style="max-width: 300px; border-radius: 10px;">
+</div>
 
-    <h3>Transparency & Technology</h3>
-    <p>ISA offers a public pop report and API access for developers.</p>
-    <p>QR code verification included. No AI or blockchain features currently used.</p>
+<h3>Submission & Pricing</h3>
+<p>ISA has a fast submission process through their website, with bulk pricing options and clear tier breakdowns. The $12/card base price is a major plus for set collectors or those grading low-value cards.</p>
 
-    <h3>Resale Performance</h3>
-    <p>Lower resale comps compared to PSA/SGC. More suited for personal collections than flipping.</p>
+<h3>Transparency & Technology</h3>
+<p>Collectors can easily access population reports, and developers can build tools using their API. While ISA lacks flashy tools like AI or blockchain, their openness and data availability score them high in this area.</p>
 
-    <h3>Brand Visibility</h3>
-    <p>Moderate social media presence. Limited presence at major card shows.</p>
+<h3>Resale Performance</h3>
+<p>ISA cards rarely reach premium resale levels. Their value in the secondary market is more in line with raw comps or slightly above. This makes ISA better suited for collectors grading for personal display or archival purposes.</p>
 
-    <h3>Pros & Cons</h3>
-    <ul>
-      <li><strong>Pros:</strong> Fast turnaround, affordable pricing, strong pop report</li>
-      <li><strong>Cons:</strong> Lower resale value, basic label design</li>
-    </ul>
+<h3>Brand Visibility</h3>
+<p>ISA has a small but consistent presence online and in hobby circles. Their branding is understated, which aligns with their straightforward and no-frills reputation.</p>
 
-    <h3>Final Take</h3>
-    <p>ISA is a solid budget-friendly grader with fast service and strong pop data. Best for collectors who want quick, affordable grading over resale performance.</p>
+<h3>Pros & Cons</h3>
+<ul>
+  <li><strong>Pros:</strong> Fast turnaround, very affordable pricing, publicly accessible pop report and API</li>
+  <li><strong>Cons:</strong> Minimal resale value, basic slab design, lower national visibility</li>
+</ul>
+
+<h3>Final Take</h3>
+<p>ISA fills a niche in the hobby: quick, no-nonsense grading for collectors who value speed, clarity, and transparency over resale hype. While their slabs may not break auction records, they’re a strong fit for set builders, budget-minded hobbyists, and anyone looking to grade with confidence.</p>
+
   </section>
 
-  <!-- Footer -->
+
   <footer class="footer">
     <p>&copy; 2025 SlabMetrics. All rights reserved.</p>
     <nav>
@@ -157,6 +169,7 @@
       <a href="#">Subscribe</a>
     </nav>
   </footer>
+
 
 </body>
 </html>
