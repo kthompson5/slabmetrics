@@ -562,3 +562,80 @@ a:hover {
 .btn-secondary:hover {
   background: linear-gradient(to right, #005f3c, #009966);
 }
+.top-rankings {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.top-rankings h2 {
+  color: #003366;
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+}
+
+.ranking-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin: 0 auto 30px;
+}
+
+.ranking-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(to right, #00c77f, #00aa66);
+  color: white;
+  font-weight: bold;
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+.rank-badge {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  line-height: 32px;
+  text-align: center;
+  margin-right: 15px;
+  font-size: 1rem;
+}
+
+.company-name {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.rankings-btn {
+  display: inline-block;
+  background: #003366;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.rankings-btn:hover {
+  background: #001f3f;
+}
+
+/* Mobile Tweaks */
+@media (max-width: 480px) {
+  .ranking-item {
+    font-size: 1rem;
+    padding: 12px 14px;
+  }
+
+  .rank-badge {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 0.9rem;
+  }
+}
