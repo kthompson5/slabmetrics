@@ -520,3 +520,45 @@ a:hover {
 .nav-buttons a:hover {
   background-color: #0077cc;
 }
+.static-navbar {
+  background: linear-gradient(to right, #001f3f, #003366);
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.big-logo {
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.button-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button-nav a {
+  background-color: #0074D9;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 16px;
+  border-radius: 6px;
+  flex: 1 1 140px;
+  max-width: 160px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-nav a:hover {
+  background-color: #005fa3;
+}
+
+.insta-icon {
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+}
