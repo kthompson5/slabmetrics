@@ -757,3 +757,22 @@ a:hover {
     margin-bottom: 20px;
   }
 }
+.top-rankings-title {
+  position: relative;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.top-rankings-title::after {
+  content: '';
+  position: absolute;
+  left: 25%;
+  bottom: -10px;
+  width: 50%;
+  height: 4px;
+  background: linear-gradient(to right, #007f5f, #2dc653);
+  border-radius: 2px;
+}
