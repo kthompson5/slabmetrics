@@ -69,7 +69,7 @@ function populateProfile(graderKey) {
 
   // Add Explore More Graders button
   const btn = document.createElement("a");
-  btn.href = "profiles.html";
+  btn.href = "profile.html";
   btn.textContent = "Explore More Graders";
   btn.className = "rankings-btn";
   document.querySelector(".tracker").appendChild(btn);
