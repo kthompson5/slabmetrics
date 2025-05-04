@@ -36,59 +36,6 @@ a:hover {
   max-width: 300px;
 }
 
-/* Hamburger Button */
-.hamburger {
-  background: none;
-  border: none;
-  font-size: 28px;
-  color: white;
-  cursor: pointer;
-  display: none;
-}
-
-/* Nav Menu */
-.nav-menu ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-menu ul li a {
-  color: white;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-/* Responsive Navbar */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  .nav-menu ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: linear-gradient(to right, #003366, #0059b3);
-    padding: 10px 0;
-    margin-top: 10px;
-  }
-
-  .nav-menu ul.active {
-    display: flex;
-  }
-
-  .nav-menu ul li {
-    padding: 12px 20px;
-    border-bottom: none;
-  }
-
-  .nav-menu ul li a {
-    color: white;
-  }
-}
 
 /* Hero Section */
 .hero {
