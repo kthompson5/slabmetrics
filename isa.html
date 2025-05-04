@@ -255,9 +255,10 @@
   <script>
   document.addEventListener("DOMContentLoaded", function () {
     const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.querySelector(".nav-menu");
+    const drawer = document.getElementById("drawerNav");
+
     hamburger.addEventListener("click", () => {
-      navMenu.classList.toggle("active");
+      drawer.classList.toggle("active");
     });
   });
 </script>
