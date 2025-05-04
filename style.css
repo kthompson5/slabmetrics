@@ -547,3 +547,18 @@ a:hover {
 .button-nav a:hover {
   background: linear-gradient(to bottom right, #00a86b, #009e63);
 }
+.btn-secondary {
+  background: linear-gradient(to right, #00784d, #00aa77);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  min-width: 120px;
+  text-align: center;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+.btn-secondary:hover {
+  background: linear-gradient(to right, #005f3c, #009966);
+}
