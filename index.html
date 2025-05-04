@@ -141,8 +141,6 @@
     <a href="#" class="btn-primary">Explore Grading Companies</a>
   </section>
 
-     <p>At SlabMetrics, we spotlight card grading companies through hobby updates, style scores, resale trends, and more. Clean insights. Zero bias.</p>
-
 <section class="top-rankings">
   <h2>Top Grading Companies – May 2025</h2>
 
@@ -150,21 +148,18 @@
     <h3>Most Trusted</h3>
     <div class="ranking-item">
       <span class="rank-badge">1</span>
-      <span class="company-box">
-        PSA <span class="arrow up">&#9650;</span>
-      </span>
+      <span class="company-name">PSA</span>
+      <span class="arrow up">&#9650;</span>
     </div>
     <div class="ranking-item">
       <span class="rank-badge">2</span>
-      <span class="company-box">
-        SGC <span class="arrow steady">&#8213;</span>
-      </span>
+      <span class="company-name">SGC</span>
+      <span class="arrow steady">&#8213;</span>
     </div>
     <div class="ranking-item">
       <span class="rank-badge">3</span>
-      <span class="company-box">
-        CGC <span class="arrow down">&#9660;</span>
-      </span>
+      <span class="company-name">CGC</span>
+      <span class="arrow down">&#9660;</span>
     </div>
   </div>
 
@@ -172,21 +167,18 @@
     <h3>Climbing the Charts</h3>
     <div class="ranking-item">
       <span class="rank-badge">4</span>
-      <span class="company-box">
-        TAG <span class="arrow up">&#9650;</span>
-      </span>
+      <span class="company-name">TAG</span>
+      <span class="arrow up">&#9650;</span>
     </div>
     <div class="ranking-item">
       <span class="rank-badge">5</span>
-      <span class="company-box">
-        Beckett <span class="arrow steady">&#8213;</span>
-      </span>
+      <span class="company-name">Beckett</span>
+      <span class="arrow steady">&#8213;</span>
     </div>
     <div class="ranking-item">
       <span class="rank-badge">6</span>
-      <span class="company-box">
-        Arena Club <span class="arrow down">&#9660;</span>
-      </span>
+      <span class="company-name">Arena Club</span>
+      <span class="arrow down">&#9660;</span>
     </div>
   </div>
 
@@ -214,38 +206,40 @@
 .ranking-item {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 10px 0;
+  justify-content: space-between;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 6px 12px;
+  background-color: #007f5f;
+  border-radius: 6px;
 }
 
 .rank-badge {
-  background: #007f5f;
-  color: white;
+  background: white;
+  color: #007f5f;
   font-weight: bold;
   border-radius: 50%;
   width: 32px;
   height: 32px;
   line-height: 32px;
+  text-align: center;
   margin-right: 10px;
+  font-size: 1rem;
 }
 
-.company-box {
-  background: #007f5f;
+.company-name {
   color: white;
   font-weight: bold;
-  padding: 6px 14px;
-  border-radius: 5px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
   font-size: 1.1rem;
+  flex-grow: 1;
+  text-align: left;
 }
 
 .arrow {
   font-weight: bold;
   font-size: 1rem;
   color: white;
-  margin-left: 8px;
+  margin-left: 10px;
 }
 
 .rankings-btn {
