@@ -487,3 +487,36 @@ a:hover {
     display: block;
   }
 }
+.navbar {
+  background: linear-gradient(to right, #003366, #0059b3);
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-logo {
+  height: 42px;
+  margin-bottom: 10px;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav-buttons a {
+  background-color: #0059b3;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav-buttons a:hover {
+  background-color: #0077cc;
+}
