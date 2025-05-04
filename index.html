@@ -14,76 +14,125 @@
       line-height: 1.6;
     }
 
-    a {
-      color: #0077cc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .navbar {
+    .static-navbar {
       background: linear-gradient(to right, #001f3f, #003366);
+      padding: 16px 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 20px;
     }
 
-    .mobile-logo {
-      height: 120px;
-      margin-bottom: 10px;
-    }
-
-    .nav-buttons {
+    .button-nav {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
+      gap: 12px;
       margin-top: 10px;
     }
 
-    .nav-buttons a {
-      background: linear-gradient(to right, #1bc47d, #14995f);
+    .button-nav a {
+      background: linear-gradient(to right, #007f5f, #2dc653);
       color: white;
-      padding: 10px 16px;
-      border-radius: 5px;
-      font-weight: bold;
+      padding: 10px 20px;
       text-align: center;
-      min-width: 110px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      flex: 1 1 calc(33.333% - 24px);
+      max-width: 200px;
+      box-sizing: border-box;
     }
 
-    .nav-buttons a.subscribe {
-      min-width: 160px;
+    .button-nav a.instagram-button {
+      flex: 1 1 100%;
+      max-width: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .insta-icon {
+      height: 20px;
+      width: 20px;
     }
 
     @media (max-width: 768px) {
-      .nav-buttons a {
-        flex: 1 1 45%;
+      .button-nav a {
+        flex: 1 1 calc(50% - 24px);
       }
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(to right, #f0f4fa, #dce7f5);
+      color: #003366;
+    }
+
+    .hero img.hero-logo {
+      max-height: 160px;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #00aaff;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .btn-primary:hover {
+      background-color: #0088cc;
+    }
+
+    .footer {
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    .footer nav a {
+      color: #00aaff;
+      margin: 0 10px;
     }
   </style>
 </head>
 <body>
-  <header class="navbar" style="justify-content: center;">
-  <nav>
-    <ul class="nav-links" style="display: grid; grid-template-columns: repeat(3, auto); gap: 10px; justify-content: center;">
-      <li><a class="btn-secondary" href="#">Home</a></li>
-      <li><a class="btn-secondary" href="#">Grader Profiles</a></li>
-      <li><a class="btn-secondary" href="#">Rankings</a></li>
-      <li><a class="btn-secondary" href="#">Compare</a></li>
-      <li><a class="btn-secondary" href="#">Explore</a></li>
-      <li><a class="btn-secondary" href="#">About</a></li>
-    </ul>
-    <div style="margin-top: 10px; text-align: center;">
-      <a class="btn-secondary" href="https://www.instagram.com/slabmetrics" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; padding: 10px 20px; text-decoration: none;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="height: 18px; width: 18px;">
+  <header class="static-navbar">
+    <nav class="button-nav">
+      <a href="#">Home</a>
+      <a href="#">Grader Profiles</a>
+      <a href="#">Rankings</a>
+      <a href="#">Compare</a>
+      <a href="#">Explore</a>
+      <a href="#">About</a>
+      <a href="https://instagram.com/slabmetrics" target="_blank" class="instagram-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="insta-icon" />
         Follow Us
       </a>
-    </div>
-  </nav>
-</header>
+    </nav>
+  </header>
+</body>
+</html>
+
 
   <section class="hero">
     <img src="logo.png" alt="SlabMetrics Logo" class="hero-logo">
