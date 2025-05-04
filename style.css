@@ -294,3 +294,66 @@ color: #003366;
     color: white;
   }
 }
+.navbar {
+  background-color: #001427;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.navbar-left img.mobile-logo {
+  height: 40px;
+  max-width: 150px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu ul li a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #001427;
+    padding: 10px 0;
+  }
+
+  .nav-menu ul.active {
+    display: flex;
+  }
+
+  .nav-menu ul li {
+    padding: 10px 20px;
+    border-top: 1px solid #333;
+  }
+
+  .nav-menu ul li a {
+    color: white;
+  }
+}
