@@ -254,11 +254,18 @@
 
   <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const hamburger = document.querySelector(".hamburger");
+    const hamburger = document.getElementById("hamburger");
     const drawer = document.getElementById("drawerNav");
 
-    hamburger.addEventListener("click", () => {
+    hamburger.addEventListener("click", function () {
       drawer.classList.toggle("active");
+    });
+
+    // Optional: close drawer when clicking outside
+    document.addEventListener("click", function (e) {
+      if (!drawer.contains(e.target) && !hamburger.contains(e.target)) {
+        drawer.classList.remove("active");
+      }
     });
   });
 </script>
