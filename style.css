@@ -801,3 +801,22 @@ a:hover {
 .btn-gradient:hover {
   background: linear-gradient(to right, #009d74, #3ee07a);
 }
+.hero-btn {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 12px 28px;
+  background: linear-gradient(90deg, #007f5f, #2dc653);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 127, 95, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 127, 95, 0.3);
+}
