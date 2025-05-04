@@ -562,3 +562,21 @@ a:hover {
   width: 20px;
   margin-right: 8px;
 }
+.button-nav a {
+  background-color: #4a90e2; /* Softer blue */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 16px;
+  border-radius: 6px;
+  flex: 1 1 140px;
+  max-width: 160px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-nav a:hover {
+  background-color: #3a78c2; /* Slightly darker on hover */
+}
