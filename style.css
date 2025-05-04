@@ -580,3 +580,23 @@ a:hover {
 .button-nav a:hover {
   background-color: #3a78c2; /* Slightly darker on hover */
 }
+.button-nav a {
+  background: linear-gradient(to bottom right, #00c781, #00a86b);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 6px;
+  flex: 1 1 140px;
+  max-width: 160px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  transition: background 0.3s ease;
+}
+
+.button-nav a:hover {
+  background: linear-gradient(to bottom right, #00a86b, #009e63);
+}
