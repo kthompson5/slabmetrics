@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grading Company Profile | SlabMetrics</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="grader-data.js" defer></script>
+  <script src="profile-loader.js" defer></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+    }
+    .profile-section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .profile-section h2, .profile-section h3 {
+      color: #007f5f;
+    }
+    .bar {
+      background-color: #eee;
+      border-radius: 6px;
+      overflow: hidden;
+      height: 24px;
+      margin-bottom: 5px;
+    }
+    .bar-fill {
+      height: 100%;
+      line-height: 24px;
+      padding-left: 8px;
+      color: white;
+      border-radius: 6px 0 0 6px;
+    }
+  </style>
+</head>
+<body>
+  <header class="static-navbar">
+    <img src="logo.png" alt="SlabMetrics Logo" class="big-logo" />
+    <nav class="button-nav">
+      <a href="index.html">Home</a>
+      <a href="profiles.html">Grader Profiles</a>
+      <a href="rankings.html">Rankings</a>
+      <a href="compare.html">Compare</a>
+      <a href="explore.html">Explore</a>
+    </nav>
+  </header>
+
+  <section class="profile-section" id="profileContent">
+    <h2 id="companyName">Loading...</h2>
+    <div id="companyLogo"></div>
+    <p id="founded"></p>
+    <p id="headquarters"></p>
+    <p id="website"></p>
+    <p id="portal"></p>
+
+    <h3>Power Rankings Score</h3>
+    <p id="score"></p>
+
+    <div id="metrics"></div>
+
+    <h3>Slab Design</h3>
+    <p id="design"></p>
+    <div id="images"></div>
+
+    <h3>Submission & Pricing</h3>
+    <p id="pricing"></p>
+
+    <h3>Transparency & Technology</h3>
+    <p id="technology"></p>
+
+    <h3>Resale Performance</h3>
+    <p id="resale"></p>
+
+    <h3>Brand Visibility</h3>
+    <p id="visibility"></p>
+
+    <h3>Pros & Cons</h3>
+    <ul id="pros"></ul>
+    <ul id="cons"></ul>
+
+    <h3>Final Take</h3>
+    <p id="final"></p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 SlabMetrics. All rights reserved.</p>
+  </footer>
+</body>
+</html>
