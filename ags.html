@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGS Grading - Company Profile | SlabMetrics</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .bar-container { display: flex; flex-direction: column; gap: 10px; margin-top: 30px; }
+    .bar-label { margin-bottom: 5px; font-weight: bold; }
+    .bar { background-color: #eee; border-radius: 6px; overflow: hidden; height: 24px; position: relative; }
+    .bar-fill { height: 100%; color: white; font-size: 0.8rem; line-height: 24px; padding-left: 8px; border-radius: 6px 0 0 6px; animation: growBar 1.5s ease-out forwards; width: 0; }
+    .volume { background-color: #0074D9; }
+    .appearance { background-color: #2ECC40; }
+    .turnaround { background-color: #FF851B; }
+    .pricing { background-color: #FFDC00; color: #333; }
+    .tech { background-color: #B10DC9; }
+    .transparency { background-color: #39CCCC; }
+    .resale { background-color: #FF4136; }
+    .brand { background-color: #85144b; }
+    @keyframes growBar { to { width: var(--bar-width); } }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <span class="slab">Slab</span><span class="metrics">Metrics</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Analytics</a></li>
+        <li><a href="#">Hidden Metrics</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Subscribe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="tracker">
+    <h2>AGS – Company Profile</h2>
+
+    <div style="text-align: center; margin-bottom: 30px;">
+      <img src="ags-logo.png" alt="AGS Logo" style="max-width: 200px;">
+    </div>
+
+    <h3>Snapshot</h3>
+    <p><strong>Founded:</strong> 2021</p>
+    <p><strong>Headquarters:</strong> New York, NY</p>
+    <p><strong>Website:</strong> <a href="https://agscard.com">agscard.com</a></p>
+    <p><strong>Submission Portal:</strong> <a href="https://agscard.com/submit">Submit a Card</a></p>
+
+    <h3>Power Rankings Score: 6.91</h3>
+    <div class="bar-container">
+      <div>
+        <div class="bar-label">Volume</div>
+        <div class="bar"><div class="bar-fill volume" style="--bar-width: 35%">3.5</div></div>
+        <p>AGS is still growing and doesn’t yet handle large-scale volume, but demand is rising due to its innovative tech-first approach.</p>
+      </div>
+      <div>
+        <div class="bar-label">Appearance</div>
+        <div class="bar"><div class="bar-fill appearance" style="--bar-width: 70%">7.0</div></div>
+        <p>AGS slabs are sleek, modern, and minimal. The label design is machine-printed with high precision, making it easy to read and visually balanced.</p>
+      </div>
+      <div>
+        <div class="bar-label">Turnaround</div>
+        <div class="bar"><div class="bar-fill turnaround" style="--bar-width: 65%">6.5</div></div>
+        <p>Standard turnaround time ranges from 7–14 business days. Priority tiers are available for faster service.</p>
+      </div>
+      <div>
+        <div class="bar-label">Pricing</div>
+        <div class="bar"><div class="bar-fill pricing" style="--bar-width: 60%">6.0</div></div>
+        <p>AGS pricing starts at $20/card. While not the cheapest option, it's competitive given the use of automation and tech.</p>
+      </div>
+      <div>
+        <div class="bar-label">Technology</div>
+        <div class="bar"><div class="bar-fill tech" style="--bar-width: 95%">9.5</div></div>
+        <p>AGS uses full AI and computer vision for grading, aiming for true objectivity. Scans and subscores are published for every grade.</p>
+      </div>
+      <div>
+        <div class="bar-label">Transparency</div>
+        <div class="bar"><div class="bar-fill transparency" style="--bar-width: 90%">9.0</div></div>
+        <p>Grading data and card scans are fully transparent, giving collectors unprecedented insight into how grades were assigned.</p>
+      </div>
+      <div>
+        <div class="bar-label">Resale Value</div>
+        <div class="bar"><div class="bar-fill resale" style="--bar-width: 45%">4.5</div></div>
+        <p>Resale comps are growing but still below PSA/BGS. Tech appeal is strong, but brand trust is still developing in secondary markets.</p>
+      </div>
+      <div>
+        <div class="bar-label">Brand Recognition</div>
+        <div class="bar"><div class="bar-fill brand" style="--bar-width: 50%">5.0</div></div>
+        <p>Still a newer brand, but growing fast in the tech-forward grading space. Known for its innovation and objectivity.</p>
+      </div>
+    </div>
+
+    <h3>Slab Design</h3>
+    <p>AGS slabs are minimal and professional, featuring laser-cut precision and high-tech print quality. The label design aligns well with the company’s modern, tech-savvy image.</p>
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
+      <img src="ags-front.png" alt="AGS Slab Front" style="max-width: 300px; border-radius: 10px;">
+      <img src="ags-back.png" alt="AGS Slab Back" style="max-width: 300px; border-radius: 10px;">
+    </div>
+
+    <h3>Submission & Pricing</h3>
+    <p>AGS offers a tech-driven submission platform. Pricing starts at $20/card. Expedited service and bulk rates are available through their dashboard.</p>
+
+    <h3>Transparency & Technology</h3>
+    <p>Grading is powered by full AI and machine learning, with raw scans and scoring data accessible online. AGS sets the bar for transparency in grading technology.</p>
+
+    <h3>Resale Performance</h3>
+    <p>While still building traction on secondary markets, AGS-graded cards are gaining favor with collectors who value data-backed grades and future potential.</p>
+
+    <h3>Brand Visibility</h3>
+    <p>AGS is known for its digital presence and emphasis on transparency. They're featured on several tech podcasts and hobby discussions focused on grading innovation.</p>
+
+    <h3>Pros & Cons</h3>
+    <ul>
+      <li><strong>Pros:</strong> Fully AI-driven grading, unmatched transparency, clean modern slab design</li>
+      <li><strong>Cons:</strong> Limited resale value (for now), smaller market presence, not ideal for high-end flipping</li>
+    </ul>
+
+    <h3>Final Take</h3>
+    <p>AGS is the grading company of the future, leveraging AI to remove subjectivity and promote consistency. Best suited for collectors and innovators who want transparency and tech integration over resale legacy.</p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 SlabMetrics. All rights reserved.</p>
+    <nav>
+      <a href="#">Home</a> | 
+      <a href="#">Analytics</a> | 
+      <a href="#">Hidden Metrics</a> | 
+      <a href="#">About</a> | 
+      <a href="#">Subscribe</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
