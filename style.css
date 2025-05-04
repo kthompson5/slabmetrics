@@ -776,3 +776,12 @@ a:hover {
   background: linear-gradient(to right, #007f5f, #2dc653);
   border-radius: 2px;
 }
+<style>
+.section-divider {
+  height: 40px;
+  background: linear-gradient(to right, #007f5f, #2dc653);
+  border-top: 2px solid #e0e0e0;
+  border-bottom: 2px solid #e0e0e0;
+  margin: 0;
+}
+</style>
