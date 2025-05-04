@@ -153,23 +153,60 @@
   <a href="#" class="rankings-btn">View Full Rankings</a>
 </section>
 
-  <section class="latest-reports">
-    <h2>Latest Free Analytics</h2>
-    <div class="report-cards">
-      <div class="report-card">
-        <h3>April Grading Trends</h3>
-        <p>Pop growth and gem rate changes.</p>
+  <!-- New Homepage Features Section -->
+<section class="feature-tools"><!-- Could also keep class "latest-reports" and add another if needed -->
+  <div class="container"><!-- assuming a container class is used for layout -->
+    <h2 class="section-title">Explore Our Tools</h2>
+    <div class="features-grid"><!-- Flex or grid container for feature cards -->
+      
+      <div class="feature-card">
+        <div class="feature-icon icon-profiles"><!-- icon container with gradient background -->
+          <!-- Example: using an <i> or <svg> for icon -->
+          <i class="fa fa-user-circle" aria-hidden="true"></i>
+        </div>
+        <h3 class="feature-title">Profiles</h3>
+        <p class="feature-description">
+          View detailed profiles of grading companies, including grading standards, turnaround times, and more.
+        </p>
+        <a href="/profiles" class="feature-link btn">View Profiles</a>
       </div>
-      <div class="report-card">
-        <h3>Hidden Pop Gems Vol. 1</h3>
-        <p>Low-pop cards worth a closer look.</p>
+      
+      <div class="feature-card">
+        <div class="feature-icon icon-rankings">
+          <i class="fa fa-chart-line" aria-hidden="true"></i>
+        </div>
+        <h3 class="feature-title">Rankings</h3>
+        <p class="feature-description">
+          Discover the latest power rankings for card graders. See who tops the lists in various categories over time.
+        </p>
+        <a href="/rankings" class="feature-link btn">Explore Rankings</a>
       </div>
-      <div class="report-card">
-        <h3>Submission Turnaround Times</h3>
-        <p>Latest speed rankings across graders.</p>
+      
+      <div class="feature-card">
+        <div class="feature-icon icon-compare">
+          <i class="fa fa-exchange-alt" aria-hidden="true"></i> <!-- exchange icon to imply compare -->
+        </div>
+        <h3 class="feature-title">Compare</h3>
+        <p class="feature-description">
+          Compare grading companies side by side. Analyze differences in fees, grading scales, and performance metrics.
+        </p>
+        <a href="/compare" class="feature-link btn">Compare Now</a>
       </div>
-    </div>
-  </section>
+      
+      <div class="feature-card">
+        <div class="feature-icon icon-explore">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+        <h3 class="feature-title">Explore</h3>
+        <p class="feature-description">
+          Explore the database of graded cards and trends. Filter and search historical data to uncover insights.
+        </p>
+        <a href="/explore" class="feature-link btn">Start Exploring</a>
+      </div>
+      
+    </div> <!-- /.features-grid -->
+  </div> <!-- /.container -->
+</section>
 
   <section class="about-teaser">
     <h2>About SlabMetrics</h2>
