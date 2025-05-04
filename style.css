@@ -287,7 +287,7 @@ color: #003366;
 
   .nav-links li {
     padding: 12px 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: none;
   }
 
   .nav-links li a {
