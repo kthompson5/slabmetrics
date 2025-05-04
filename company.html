@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grading Company Profile | SlabMetrics</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="company.js"></script>
   <style>
-    .tracker { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
     .bar-container { display: flex; flex-direction: column; gap: 10px; margin-top: 30px; }
     .bar-label { margin-bottom: 5px; font-weight: bold; }
     .bar { background-color: #eee; border-radius: 6px; overflow: hidden; height: 24px; position: relative; }
@@ -23,90 +23,35 @@
   </style>
 </head>
 <body>
-
-  <!-- Navbar placeholder -->
   <header class="navbar">
     <div class="logo">
-      <img src="logo.png" alt="SlabMetrics Logo" height="40">
+      <img src="logo.png" alt="SlabMetrics Logo" class="navbar-logo">
     </div>
+    <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+    <nav class="nav-menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Analytics</a></li>
+        <li><a href="#">Hidden Metrics</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Subscribe</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Company Profile -->
-  <section class="tracker" id="profile-container">
-    <h2>Loading...</h2>
+  <section class="tracker" id="company-profile">
+    <!-- Content populated dynamically -->
   </section>
 
   <footer class="footer">
     <p>&copy; 2025 SlabMetrics. All rights reserved.</p>
+    <nav>
+      <a href="index.html">Home</a> | 
+      <a href="#">Analytics</a> | 
+      <a href="#">Hidden Metrics</a> | 
+      <a href="#">About</a> | 
+      <a href="#">Subscribe</a>
+    </nav>
   </footer>
-
-  <script>
-    const companyKey = new URLSearchParams(window.location.search).get('company');
-
-    fetch('companies.json')
-      .then(response => response.json())
-      .then(data => {
-        const c = data[companyKey];
-        if (!c) {
-          document.getElementById('profile-container').innerHTML = '<p>Company not found.</p>';
-          return;
-        }
-
-        const container = document.getElementById('profile-container');
-        container.innerHTML = `
-          <div style="text-align: center; margin-bottom: 30px;">
-            <img src="${c.logo}" alt="${c.name} Logo" style="max-width: 200px;">
-          </div>
-
-          <h2>${c.name} – Company Profile</h2>
-
-          <h3>Snapshot</h3>
-          <p><strong>Founded:</strong> ${c.founded}</p>
-          <p><strong>Headquarters:</strong> ${c.hq}</p>
-          <p><strong>Website:</strong> <a href="${c.website}">${c.website.replace('https://', '')}</a></p>
-          <p><strong>Submission Portal:</strong> <a href="${c.submit}">Submit a Card</a></p>
-
-          <h3>Power Rankings Score: ${c.score}</h3>
-
-          <div class="bar-container">
-            ${Object.entries(c.metrics).map(([key, val]) => `
-              <div>
-                <div class="bar-label">${key.charAt(0).toUpperCase() + key.slice(1)}</div>
-                <div class="bar"><div class="bar-fill ${key}" style="--bar-width: ${val * 10}%;">${val.toFixed(1)}</div></div>
-              </div>
-            `).join('')}
-          </div>
-
-          <h3>Slab Design</h3>
-          <p>${c.slabDesign}</p>
-          <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
-            <img src="${c.images.front}" alt="${c.name} Slab Front" style="max-width: 300px; border-radius: 10px;">
-            <img src="${c.images.back}" alt="${c.name} Slab Back" style="max-width: 300px; border-radius: 10px;">
-          </div>
-
-          <h3>Submission & Pricing</h3>
-          <p>${c.turnaround}</p>
-          <p>${c.pricing}</p>
-
-          <h3>Transparency & Technology</h3>
-          <p>${c.tech}</p>
-
-          <h3>Resale Performance</h3>
-          <p>${c.resale}</p>
-
-          <h3>Brand Visibility</h3>
-          <p>${c.brand}</p>
-
-          <h3>Pros & Cons</h3>
-          <ul>
-            <li><strong>Pros:</strong> ${c.pros.join(', ')}</li>
-            <li><strong>Cons:</strong> ${c.cons.join(', ')}</li>
-          </ul>
-
-          <h3>Final Take</h3>
-          <p>${c.final}</p>
-        `;
-      });
-  </script>
 </body>
 </html>
