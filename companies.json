@@ -1,0 +1,77 @@
+{
+  "isa": {
+    "name": "ISA Grading",
+    "logo": "ISA.png",
+    "founded": "2010",
+    "headquarters": "Brighton, Michigan",
+    "website": "https://www.isagrading.com",
+    "submissionPortal": "https://www.isagrading.com/submit-a-card",
+    "powerRanking": "3.83",
+    "metrics": {
+      "Volume": { "score": 2.5, "color": "#0074D9", "description": "ISA processes a relatively low number of cards weekly, especially compared to the big four graders. It's a niche operation with less overall volume." },
+      "Appearance": { "score": 4.0, "color": "#2ECC40", "description": "ISA slabs are clean and functional, though the label design is considered quite basic compared to some modern alternatives." },
+      "Turnaround": { "score": 8.0, "color": "#FF851B", "description": "Turnaround times are one of ISA’s strong suits. Most standard orders are completed within 5–10 business days." },
+      "Pricing": { "score": 7.5, "color": "#FFDC00", "description": "ISA offers competitive pricing starting at $12/card, making it one of the more affordable grading options." },
+      "Technology": { "score": 3.0, "color": "#B10DC9", "description": "While ISA offers a public pop report and API access, it lacks advanced features like AI grading or blockchain verification." },
+      "Transparency": { "score": 8.5, "color": "#39CCCC", "description": "ISA is one of the few smaller graders that offers a pop report and open communication about grading practices." },
+      "Resale Value": { "score": 2.0, "color": "#FF4136", "description": "ISA slabs tend to sell for significantly less than PSA, SGC, or BGS, making them a tough flip in the secondary market." },
+      "Brand Recognition": { "score": 3.0, "color": "#85144b", "description": "ISA has a moderate hobby presence but isn’t widely recognized by casual collectors or investors." }
+    },
+    "slabImages": {
+      "front": "isa-mj-front.png",
+      "back": "isa-mj-back.png"
+    },
+    "slabDesignNote": "ISA slabs are functional with a clean, tamper-evident case. The label is clear but basic.",
+    "submissionDetails": {
+      "turnaround": "5–10 business days",
+      "price": "$12/card"
+    },
+    "techTransparencyNote": [
+      "ISA offers a public pop report and API access for developers.",
+      "QR code verification included. No AI or blockchain features currently used."
+    ],
+    "resaleNote": "Lower resale comps compared to PSA/SGC. More suited for personal collections than flipping.",
+    "brandNote": "Moderate social media presence. Limited presence at major card shows.",
+    "pros": ["Fast turnaround", "Affordable pricing", "Strong pop report"],
+    "cons": ["Lower resale value", "Basic label design"],
+    "finalTake": "ISA is a solid budget-friendly grader with fast service and strong pop data. Best for collectors who want quick, affordable grading over resale performance."
+  },
+
+  "psa": {
+    "name": "PSA (Professional Sports Authenticator)",
+    "logo": "psa-logo.png",
+    "founded": "1991",
+    "headquarters": "Santa Ana, California",
+    "website": "https://www.psacard.com",
+    "submissionPortal": "https://www.psacard.com/submit",
+    "powerRanking": "8.97",
+    "metrics": {
+      "Volume": { "score": 10.0, "color": "#0074D9", "description": "PSA grades more cards than any other company in the hobby. Their output volume is unmatched, and they dominate across sports and TCGs." },
+      "Appearance": { "score": 8.5, "color": "#2ECC40", "description": "PSA’s slab design is widely recognized and respected. While the label is simple, its clean layout and red/white branding are iconic." },
+      "Turnaround": { "score": 6.0, "color": "#FF851B", "description": "Turnaround times have improved but can still be inconsistent based on service level and submission volume." },
+      "Pricing": { "score": 5.5, "color": "#FFDC00", "description": "PSA's pricing is tiered based on declared value, with the lowest tier around $19 and premium options over $100." },
+      "Technology": { "score": 6.5, "color": "#B10DC9", "description": "PSA has invested in AI and image capture for verification, and offers a robust Cert Verification tool, but lacks advanced real-time tracking or blockchain tech." },
+      "Transparency": { "score": 7.5, "color": "#39CCCC", "description": "PSA provides detailed population reports and cert lookup but is occasionally criticized for lack of communication during delays." },
+      "Resale Value": { "score": 9.5, "color": "#FF4136", "description": "PSA slabs carry the strongest resale value in the hobby across most categories, from modern rookies to vintage grails." },
+      "Brand Recognition": { "score": 10.0, "color": "#85144b", "description": "PSA is the gold standard for many collectors. Their brand is synonymous with the term 'slabbed card.'" }
+    },
+    "slabImages": {
+      "front": "psa-front.png",
+      "back": "psa-back.png"
+    },
+    "slabDesignNote": "PSA slabs are clean, familiar, and instantly recognizable. Their red label and consistent font layout make them iconic in the hobby.",
+    "submissionDetails": {
+      "turnaround": "Varies by service level (10–65 business days typical)",
+      "price": "Starts at $19/card (value-dependent)"
+    },
+    "techTransparencyNote": [
+      "Includes Cert Verification, barcodes, and digital imaging.",
+      "Some AI elements used internally for card identification and fraud detection."
+    ],
+    "resaleNote": "PSA-graded cards consistently achieve the highest resale premiums, making them ideal for long-term value and liquidity.",
+    "brandNote": "Strong brand identity and partnerships. PSA slabs are regularly featured in auctions and major shows.",
+    "pros": ["Highest resale value", "Most trusted name in grading", "Large volume capacity"],
+    "cons": ["Higher pricing tiers", "Occasional long turnaround times"],
+    "finalTake": "PSA is the market leader in grading for a reason: it delivers top-tier resale value, brand trust, and volume consistency. While not the fastest or cheapest, it remains the industry benchmark."
+  }
+}
