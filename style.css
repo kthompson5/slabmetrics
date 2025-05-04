@@ -376,3 +376,60 @@ a:hover {
     color: white;
   }
 }
+<style>
+  .drawer-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(to bottom, #001f3f, #003366);
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+    padding-top: 60px;
+  }
+
+  .drawer-nav.active {
+    right: 0;
+  }
+
+  .drawer-nav .nav-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .drawer-nav .nav-links li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .drawer-nav .nav-links li a {
+    display: block;
+    padding: 16px 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .drawer-nav .nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .hamburger {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+  }
+
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  }
+</style>
