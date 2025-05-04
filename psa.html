@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PSA Grading - Company Profile | SlabMetrics</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .bar-container { display: flex; flex-direction: column; gap: 10px; margin-top: 30px; }
+    .bar-label { margin-bottom: 5px; font-weight: bold; }
+    .bar { background-color: #eee; border-radius: 6px; overflow: hidden; height: 24px; position: relative; }
+    .bar-fill { height: 100%; color: white; font-size: 0.8rem; line-height: 24px; padding-left: 8px; border-radius: 6px 0 0 6px; animation: growBar 1.5s ease-out forwards; width: 0; }
+    .volume { background-color: #0074D9; }
+    .appearance { background-color: #2ECC40; }
+    .turnaround { background-color: #FF851B; }
+    .pricing { background-color: #FFDC00; color: #333; }
+    .tech { background-color: #B10DC9; }
+    .transparency { background-color: #39CCCC; }
+    .resale { background-color: #FF4136; }
+    .brand { background-color: #85144b; }
+    @keyframes growBar { to { width: var(--bar-width); } }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <span class="slab">Slab</span><span class="metrics">Metrics</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Analytics</a></li>
+        <li><a href="#">Hidden Metrics</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Subscribe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="tracker">
+    <h2>PSA – Company Profile</h2>
+
+    <div style="text-align: center; margin-bottom: 30px;">
+      <img src="psa-logo.png" alt="PSA Logo" style="max-width: 200px;">
+    </div>
+
+    <h3>Snapshot</h3>
+    <p><strong>Founded:</strong> 1991</p>
+    <p><strong>Headquarters:</strong> Santa Ana, California</p>
+    <p><strong>Website:</strong> <a href="https://www.psacard.com">psacard.com</a></p>
+    <p><strong>Submission Portal:</strong> <a href="https://www.psacard.com/submit">Submit a Card</a></p>
+
+    <h3>Power Rankings Score: 8.97</h3>
+    <div class="bar-container">
+      <div>
+        <div class="bar-label">Volume</div>
+        <div class="bar"><div class="bar-fill volume" style="--bar-width: 100%">10.0</div></div>
+        <p>PSA grades more cards than any other company in the hobby. Their output is unmatched across all sports and TCG categories.</p>
+      </div>
+      <div>
+        <div class="bar-label">Appearance</div>
+        <div class="bar"><div class="bar-fill appearance" style="--bar-width: 85%">8.5</div></div>
+        <p>PSA’s slab is iconic—simple, consistent, and instantly recognizable thanks to the bold red label and clear layout.</p>
+      </div>
+      <div>
+        <div class="bar-label">Turnaround</div>
+        <div class="bar"><div class="bar-fill turnaround" style="--bar-width: 60%">6.0</div></div>
+        <p>Turnaround times vary by service level and demand, ranging from 10 to 65 business days.</p>
+      </div>
+      <div>
+        <div class="bar-label">Pricing</div>
+        <div class="bar"><div class="bar-fill pricing" style="--bar-width: 55%">5.5</div></div>
+        <p>PSA's tiered pricing starts around $19 and scales up quickly based on declared card value and speed.</p>
+      </div>
+      <div>
+        <div class="bar-label">Technology</div>
+        <div class="bar"><div class="bar-fill tech" style="--bar-width: 65%">6.5</div></div>
+        <p>Advanced features include Cert Verification, barcodes, and AI-supported card recognition. Blockchain tools are not yet used.</p>
+      </div>
+      <div>
+        <div class="bar-label">Transparency</div>
+        <div class="bar"><div class="bar-fill transparency" style="--bar-width: 75%">7.5</div></div>
+        <p>Collectors benefit from population reports and cert lookup tools. PSA is generally transparent but can be slow during backlogs.</p>
+      </div>
+      <div>
+        <div class="bar-label">Resale Value</div>
+        <div class="bar"><div class="bar-fill resale" style="--bar-width: 95%">9.5</div></div>
+        <p>PSA slabs consistently command the highest resale premiums, trusted by collectors and investors alike.</p>
+      </div>
+      <div>
+        <div class="bar-label">Brand Recognition</div>
+        <div class="bar"><div class="bar-fill brand" style="--bar-width: 100%">10.0</div></div>
+        <p>PSA is the most recognized brand in the industry. Their slabs are featured in top auctions and high-profile collections.</p>
+      </div>
+    </div>
+
+    <h3>Slab Design</h3>
+    <p>PSA slabs are clean, reliable, and familiar. The red header label and standardized format make them instantly recognizable, even from a distance. Simplicity and legacy appeal to many collectors.</p>
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
+      <img src="psa-front.png" alt="PSA Slab Front" style="max-width: 300px; border-radius: 10px;">
+      <img src="psa-back.png" alt="PSA Slab Back" style="max-width: 300px; border-radius: 10px;">
+    </div>
+
+    <h3>Submission & Pricing</h3>
+    <p>PSA offers a robust online submission system with options for bulk, express, and premium levels. Pricing starts at $19/card for low-value items and scales up depending on declared value and service speed.</p>
+
+    <h3>Transparency & Technology</h3>
+    <p>PSA provides population reports, certification lookups, and uses AI-assisted technology for card recognition. While not the most tech-heavy platform, their systems are reliable and useful.</p>
+
+    <h3>Resale Performance</h3>
+    <p>PSA slabs dominate resale platforms. Whether vintage or modern, a PSA-graded card is almost always the highest selling version of that card across marketplaces.</p>
+
+    <h3>Brand Visibility</h3>
+    <p>PSA is a household name in the hobby, featured in major auctions, sponsored events, and high-traffic dealer booths. Their branding is ingrained into card culture.</p>
+
+    <h3>Pros & Cons</h3>
+    <ul>
+      <li><strong>Pros:</strong> Top resale value, trusted brand, strong infrastructure and population data</li>
+      <li><strong>Cons:</strong> Higher pricing tiers, inconsistent turnaround times depending on volume</li>
+    </ul>
+
+    <h3>Final Take</h3>
+    <p>PSA sets the benchmark for grading companies. With a reputation for consistency and value, they are the go-to option for collectors looking to protect, authenticate, and maximize the market potential of their cards.</p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 SlabMetrics. All rights reserved.</p>
+    <nav>
+      <a href="#">Home</a> | 
+      <a href="#">Analytics</a> | 
+      <a href="#">Hidden Metrics</a> | 
+      <a href="#">About</a> | 
+      <a href="#">Subscribe</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
