@@ -785,3 +785,19 @@ a:hover {
   margin: 0;
 }
 </style>
+.btn-gradient {
+  display: inline-block;
+  margin-top: 20px;
+  background: linear-gradient(to right, #007f5f, #2dc653);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(to right, #009d74, #3ee07a);
+}
