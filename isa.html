@@ -138,20 +138,20 @@
 <body>
 
   <header class="navbar">
-    <img src="logo.png" alt="SlabMetrics Logo" class="mobile-logo">
-    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">&#9776;</button>
-    <nav class="nav-menu" id="navMenu">
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Grader Profiles</a></li>
-        <li><a href="#">Rankings</a></li>
-        <li><a href="#">Compare</a></li>
-        <li><a href="#">Explore</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Subscribe</a></li>
-      </ul>
-    </nav>
-  </header>
+  <img src="logo.png" alt="SlabMetrics Logo" class="mobile-logo" />
+  <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+  <nav class="nav-menu">
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Grader Profiles</a></li>
+      <li><a href="#">Rankings</a></li>
+      <li><a href="#">Compare</a></li>
+      <li><a href="#">Explore</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Subscribe</a></li>
+    </ul>
+  </nav>
+</header>
 
   <section class="tracker">
     <h2>ISA Grading – Company Profile</h2>
@@ -253,13 +253,13 @@
   </footer>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const hamburger = document.getElementById('hamburger');
-      const navMenu = document.getElementById('navMenu');
-      hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-      });
+  document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
     });
-  </script>
+  });
+</script>
 </body>
 </html>
