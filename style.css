@@ -639,3 +639,121 @@ a:hover {
     font-size: 0.9rem;
   }
 }
+/* Container and Section general styles */
+.feature-tools {
+  padding: 40px 20px;  /* some vertical and horizontal padding for the section */
+  background: #fefefe; /* light background (could also be none if already white) */
+}
+.feature-tools .section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  /* (If a gradient underline is desired) */
+  display: inline-block;
+  position: relative;
+}
+.feature-tools .section-title::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 4px;
+  background: linear-gradient(90deg, #34c759, #0bab64); /* example green gradient */
+  position: absolute;
+  left: 25%;
+  bottom: -8px;
+  border-radius: 2px;
+}
+
+/* Features grid layout */
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;                   /* space between cards */
+  justify-content: space-between;
+}
+.feature-card {
+  flex: 1 1 calc(25% - 20px);  /* four columns with some gap on large screens */
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;          /* center-align content */
+  /* Shadow for a card (optional) */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.feature-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+/* Ensure cards don't shrink too small */
+.feature-card {
+  min-width: 220px;
+}
+
+/* Icon style */
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px auto;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #34c759, #0bab64); /* SlabMetrics green gradient */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature-icon i {
+  color: #fff;
+  font-size: 30px;
+}
+/* (If using SVGs instead of <i>, ensure the SVG or img fits in this container) */
+
+/* Feature title */
+.feature-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333;
+  /* Possibly use a font or style similar to other headings */
+}
+
+/* Feature description text */
+.feature-description {
+  font-size: 0.95em;
+  line-height: 1.4;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Feature link button */
+.feature-link.btn {
+  /* Assuming .btn has some base styling; otherwise define a simple button style: */
+  display: inline-block;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #34c759, #0bab64);
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.feature-link.btn:hover {
+  opacity: 0.9;
+}
+.feature-link.btn:active {
+  opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .feature-card {
+    flex: 1 1 calc(50% - 20px); /* two per row on tablets/smaller screens */
+  }
+}
+@media (max-width: 480px) {
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature-card {
+    flex: 1 1 100%;      /* one per row on mobile */
+    max-width: 400px;    /* optional: limit width on large phones */
+    margin-bottom: 20px;
+  }
+}
