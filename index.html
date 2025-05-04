@@ -142,28 +142,130 @@
   </section>
 
  <section class="top-rankings">
-    <h2>Top Grading Companies – May 2025</h2>
+  <h2>Top Grading Companies – May 2025</h2>
 
-    <div class="ranking-group">
-      <h3>Trusted Leaders</h3>
-      <div class="ranking-card">
-        <div class="ranking-item"><span class="rank-badge">1.</span> PSA <span class="movement steady">–</span></div>
-        <div class="ranking-item"><span class="rank-badge">2.</span> SGC <span class="movement up">▲</span></div>
-        <div class="ranking-item"><span class="rank-badge">3.</span> CGC <span class="movement down">▼</span></div>
-      </div>
+  <div class="ranking-group">
+    <h3>Most Trusted</h3>
+    <div class="ranking-item">
+      <span class="rank-badge">1</span>
+      <span class="company-name">
+        <span class="arrow up">&#9650;</span> PSA
+      </span>
     </div>
-
-    <div class="ranking-group">
-      <h3>Emerging Favorites</h3>
-      <div class="ranking-card">
-        <div class="ranking-item"><span class="rank-badge">4.</span> TAG <span class="movement up">▲</span></div>
-        <div class="ranking-item"><span class="rank-badge">5.</span> FCG <span class="movement steady">–</span></div>
-        <div class="ranking-item"><span class="rank-badge">6.</span> Arena Club <span class="movement down">▼</span></div>
-      </div>
+    <div class="ranking-item">
+      <span class="rank-badge">2</span>
+      <span class="company-name">
+        <span class="arrow steady">&#8213;</span> SGC
+      </span>
     </div>
+    <div class="ranking-item">
+      <span class="rank-badge">3</span>
+      <span class="company-name">
+        <span class="arrow down">&#9660;</span> CGC
+      </span>
+    </div>
+  </div>
 
-    <a href="#" class="rankings-btn">View Full Rankings</a>
-  </section>
+  <div class="ranking-group">
+    <h3>Climbing the Charts</h3>
+    <div class="ranking-item">
+      <span class="rank-badge">4</span>
+      <span class="company-name">
+        <span class="arrow up">&#9650;</span> TAG
+      </span>
+    </div>
+    <div class="ranking-item">
+      <span class="rank-badge">5</span>
+      <span class="company-name">
+        <span class="arrow steady">&#8213;</span> Beckett
+      </span>
+    </div>
+    <div class="ranking-item">
+      <span class="rank-badge">6</span>
+      <span class="company-name">
+        <span class="arrow down">&#9660;</span> Arena Club
+      </span>
+    </div>
+  </div>
+
+  <a href="#" class="rankings-btn">View Full Rankings</a>
+</section>
+
+<style>
+.top-rankings {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f0f9f4;
+}
+
+.top-rankings h2 {
+  color: #007f5f;
+  margin-bottom: 30px;
+}
+
+.ranking-group {
+  margin-bottom: 30px;
+}
+
+.ranking-group h3 {
+  color: #2dc653;
+  margin-bottom: 15px;
+}
+
+.ranking-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.rank-badge {
+  background: #007f5f;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  margin-right: 10px;
+}
+
+.company-name {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  gap: 8px;
+}
+
+.arrow {
+  font-size: 1rem;
+  margin-right: 4px;
+}
+
+.arrow.up {
+  color: white;
+}
+
+.arrow.down {
+  color: #ff4d4d;
+}
+
+.arrow.steady {
+  color: #999;
+}
+
+.rankings-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: linear-gradient(to right, #007f5f, #2dc653);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+</style>
 
   <!-- New Homepage Features Section -->
 <section class="feature-tools"><!-- Could also keep class "latest-reports" and add another if needed -->
