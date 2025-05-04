@@ -227,3 +227,78 @@ a:hover {
   color: #00aaff;
   margin: 0 10px;
 }
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #003366, #0059b3);
+  padding: 10px 20px;
+  position: relative;
+}
+
+.navbar-left img.mobile-logo {
+  height: 60px;
+  object-fit: contain;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    width: 100%;
+  }
+
+  .nav-menu.active {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: linear-gradient(to right, #003366, #0059b3);
+    z-index: 999;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    padding: 12px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .nav-links li a {
+    color: white;
+  }
+}
