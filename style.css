@@ -304,8 +304,9 @@ color: #003366;
 }
 
 .navbar-left img.mobile-logo {
-  height: 40px;
-  max-width: 150px;
+  height: 100px;
+  max-width: 300px;
+}
 }
 
 .hamburger {
