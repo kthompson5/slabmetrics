@@ -843,3 +843,7 @@ a:hover {
 .transparency { background-color: #39CCCC; }
 .resale { background-color: #FF4136; }
 .brand { background-color: #85144b; }
+.section-divider {
+  border-bottom: 1px solid #ddd;
+  margin: 40px 0 20px;
+}
