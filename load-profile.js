@@ -33,6 +33,7 @@ function populateProfile(graderId) {
 
   // Snapshot
   const snapshotHTML = `
+    <div class="section-divider"></div>
     <h3>Snapshot</h3>
     <p><strong>Founded:</strong> ${grader.founded}</p>
     <p><strong>Headquarters:</strong> ${grader.hq}</p>
@@ -42,7 +43,7 @@ function populateProfile(graderId) {
   container.insertAdjacentHTML("beforeend", snapshotHTML);
 
   // Power score
-  container.insertAdjacentHTML("beforeend", `<h3>Power Rankings Score: ${grader.powerScore}</h3>`);
+  container.insertAdjacentHTML("beforeend", `<div class="section-divider"></div><h3>Power Rankings Score: ${grader.powerScore}</h3>`);
 
   // Metrics
   let barsHTML = `<div class="bar-container">`;
@@ -51,14 +52,14 @@ function populateProfile(graderId) {
       <div>
         <div class="bar-label">${capitalize(key)}</div>
         <div class="bar">
-          <div class="bar-fill ${key}" style="--bar-width: ${metric.score * 10}%">${metric.score}</div>
+          <div class="bar-fill ${key}" style="width: ${metric.score * 10}%">${metric.score}</div>
         </div>
         <p>${metric.text}</p>
       </div>
     `;
   }
   barsHTML += `</div>`;
-  container.insertAdjacentHTML("beforeend", barsHTML);
+  container.insertAdjacentHTML("beforeend", `<div class="section-divider"></div>${barsHTML}`);
 
   // Sections
   const sections = [
@@ -70,10 +71,10 @@ function populateProfile(graderId) {
   ];
 
   sections.forEach(({ key, label }) => {
-    const sectionHTML = `<h3>${label}</h3><p>${grader[key]}</p>`;
+    const sectionHTML = `<div class="section-divider"></div><h3>${label}</h3><p>${grader[key]}</p>`;
     container.insertAdjacentHTML("beforeend", sectionHTML);
 
-    // Inject slab images right after the design section
+    // Inject slab images after "Slab Design" content
     if (key === "design" && grader.images?.slabFront && grader.images?.slabBack) {
       const imageHTML = `
         <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
@@ -89,6 +90,7 @@ function populateProfile(graderId) {
   container.insertAdjacentHTML(
     "beforeend",
     `
+    <div class="section-divider"></div>
     <h3>Pros & Cons</h3>
     <ul>
       <li><strong>Pros:</strong> ${grader.pros.join(", ")}</li>
@@ -98,9 +100,9 @@ function populateProfile(graderId) {
   );
 
   // Final Take
-  container.insertAdjacentHTML("beforeend", `<h3>Final Take</h3><p>${grader.finalTake}</p>`);
+  container.insertAdjacentHTML("beforeend", `<div class="section-divider"></div><h3>Final Take</h3><p>${grader.finalTake}</p>`);
 
-  // Explore button
+  // Explore More button
   const btn = document.createElement("a");
   btn.href = "profiles.html";
   btn.textContent = "Explore More Graders";
