@@ -68,8 +68,21 @@ function populateProfile(graderId) {
     { key: "resalePerformance", label: "Resale Performance" },
     { key: "brandVisibility", label: "Brand Visibility" },
   ];
+
   sections.forEach(({ key, label }) => {
-    container.insertAdjacentHTML("beforeend", `<h3>${label}</h3><p>${grader[key]}</p>`);
+    const sectionHTML = `<h3>${label}</h3><p>${grader[key]}</p>`;
+    container.insertAdjacentHTML("beforeend", sectionHTML);
+
+    // Inject slab images right after the design section
+    if (key === "design" && grader.images?.slabFront && grader.images?.slabBack) {
+      const imageHTML = `
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
+          <img src="${grader.images.slabFront}" alt="${grader.name} Slab Front" style="max-width: 300px; border-radius: 10px;">
+          <img src="${grader.images.slabBack}" alt="${grader.name} Slab Back" style="max-width: 300px; border-radius: 10px;">
+        </div>
+      `;
+      container.insertAdjacentHTML("beforeend", imageHTML);
+    }
   });
 
   // Pros & Cons
