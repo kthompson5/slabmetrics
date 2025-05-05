@@ -835,3 +835,11 @@ a:hover {
 .explore-button:hover {
   background: linear-gradient(to right, #00664c, #28b04c);
 }
+.volume { background-color: #0074D9; }
+.appearance { background-color: #2ECC40; }
+.turnaround { background-color: #FF851B; }
+.pricing { background-color: #FFDC00; color: #333; }
+.technology { background-color: #B10DC9; }
+.transparency { background-color: #39CCCC; }
+.resale { background-color: #FF4136; }
+.brand { background-color: #85144b; }
