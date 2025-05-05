@@ -38,5 +38,70 @@ const gradingCompanies = [
       "Lower national visibility"
     ],
     finalTake: "ISA fills a niche in the hobby: quick, no-nonsense grading for collectors who value speed, clarity, and transparency over resale hype."
-  }
+  },
+  
+    {
+    id: "sgc",
+    name: "SGC",
+    logo: "SGC.png",
+    founded: 1998,
+    hq: "Boca Raton, Florida",
+    website: "https://www.gosgc.com",
+    portal: "https://gosgc.com/submit",
+    powerScore: 7.91,
+    metrics: {
+      volume: {
+        score: 8.5,
+        text: "SGC handles a high submission volume, especially for vintage cards. They are a trusted option among longtime collectors."
+      },
+      appearance: {
+        score: 9.0,
+        text: "The signature black insert gives SGC slabs a premium, framed look. Many collectors consider them the best-designed slabs on the market."
+      },
+      turnaround: {
+        score: 7.5,
+        text: "Turnaround times are reliable and typically fall in the 10–15 business day range. Rush options are also available."
+      },
+      pricing: {
+        score: 6.5,
+        text: "Pricing is competitive with PSA and Beckett, with standard submissions starting around $18–$20 per card."
+      },
+      technology: {
+        score: 5.0,
+        text: "SGC offers basic QR verification but lacks advanced features like population trends, blockchain, or AI-assisted grading."
+      },
+      transparency: {
+        score: 6.0,
+        text: "While population reports are accessible, SGC doesn’t currently offer open APIs or deep insight into their grading process."
+      },
+      resale: {
+        score: 7.0,
+        text: "SGC-graded cards generally resell at a strong premium—especially vintage—though modern resale values trail PSA slightly."
+      },
+      brand: {
+        score: 8.5,
+        text: "SGC is one of the most recognized and respected names in card grading, especially for vintage cards and long-time hobbyists."
+      }
+    },
+    images: {
+      slabFront: "sgc-mj-front.png",
+      slabBack: "sgc-mj-back.png"
+    },
+    design: "SGC slabs are sleek, well-built, and known for their standout black insert. This design is especially praised for enhancing the visual appeal of vintage cards, giving them a museum-quality display.",
+    submission: "SGC accepts both direct submissions and third-party group submissions. Their submission portal is easy to use, and bulk rates make them appealing to frequent graders.",
+    tech: "While SGC’s tech offerings are minimal, their slab verification system ensures authenticity. However, there’s room to grow in areas like public APIs or enhanced scan tech.",
+    resalePerformance: "SGC commands strong resale value for vintage cards. Modern resale trails PSA but still outpaces many smaller grading companies, offering a good balance between credibility and affordability.",
+    brandVisibility: "SGC has a consistent presence at card shows, strong branding, and a loyal base among vintage collectors. Their green label rebrand was well received and continues to gain traction.",
+    pros: [
+      "Highly respected for vintage grading",
+      "Beautiful black slab design",
+      "Strong resale performance"
+    ],
+    cons: [
+      "Limited tech features",
+      "Modern card resale lags behind PSA",
+      "No public API or tool integrations"
+    ],
+    finalTake: "SGC has earned its place as one of the big names in grading, particularly in the vintage space. With consistent turnaround, iconic slab design, and brand trust, SGC is a smart choice for collectors who prioritize presentation and legacy."
+  },
 ];
