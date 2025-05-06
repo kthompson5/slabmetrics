@@ -63,9 +63,6 @@ const gradingCompanies = [
   ],
   finalTake: "AGS represents the future of grading for collectors who value tech, transparency, and innovation. While their resale is still growing, the grading quality and user experience are among the best available."
 },
-
-###### ISA ######
-
 {
     id: "isa",
     name: "ISA Grading",
@@ -106,8 +103,6 @@ const gradingCompanies = [
     ],
     finalTake: "ISA fills a niche in the hobby: quick, no-nonsense grading for collectors who value speed, clarity, and transparency over resale hype."
   },
-
-####### SGC #######
     {
     id: "sgc",
     name: "SGC",
@@ -172,9 +167,6 @@ const gradingCompanies = [
     ],
     finalTake: "SGC has earned its place as one of the big names in grading, particularly in the vintage space. With consistent turnaround, iconic slab design, and brand trust, SGC is a smart choice for collectors who prioritize presentation and legacy."
   },
-
-##### TAG #####
-
 {
   id: "tag",
   name: "TAG Grading",
